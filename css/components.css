@@ -205,11 +205,20 @@ HOTEL OVERVIEW
 .overview {
   display: flex;
   align-items: center;
-  border-bottom: var(--line);
+  border-bottom: 1px solid var(--color-grey-light-2);
+}
+
+.overview__heading {
+  font-size: 2.25rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1.5rem 3rem;
 }
 
 .overview__stars {
   margin-right: auto;
+  display: flex;
 }
 
 .overview__icon-star,
@@ -220,4 +229,10 @@ HOTEL OVERVIEW
 }
 
 .overview__location {
+}
+
+/************************************************************************************************
+BUTTON INLINE
+************************************************************************************************/
+.btn-inline {
 }
