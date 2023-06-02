@@ -188,7 +188,7 @@ USER NAVIGATION
 }
 
 /************************************************************************************************
-HOTEL OVERVIEW
+GALLERY
 ************************************************************************************************/
 .gallery {
   display: flex;
@@ -197,4 +197,27 @@ HOTEL OVERVIEW
 .gallery__photo {
   width: 100%;
   display: block;
+}
+
+/************************************************************************************************
+HOTEL OVERVIEW
+************************************************************************************************/
+.overview {
+  display: flex;
+  align-items: center;
+  border-bottom: var(--line);
+}
+
+.overview__stars {
+  margin-right: auto;
+}
+
+.overview__icon-star,
+.overview__icon-location {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: var(--color-primary);
+}
+
+.overview__location {
 }
