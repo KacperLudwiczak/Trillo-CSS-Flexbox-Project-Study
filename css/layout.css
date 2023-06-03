@@ -6,6 +6,14 @@
   min-height: 50rem;
 }
 
+@media (max-width: 75em) {
+  .container {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
 .header {
   font-size: 1.4rem;
   height: 7rem;
@@ -17,8 +25,23 @@
   align-items: center;
 }
 
+@media (max-width: 31.25em) {
+  .header {
+    flex-wrap: wrap;
+    height: 10rem;
+    align-content: space-around;
+  }
+}
+
 .content {
   display: flex;
+}
+
+@media (max-width: 56.25em) {
+  /* Replace var(--bp-medium) with the equivalent value, 900px */
+  .content {
+    flex-direction: column;
+  }
 }
 
 .sidebar {
@@ -44,12 +67,36 @@
   border-bottom: var(--line);
 }
 
+@media (max-width: 75em) {
+  .detail {
+    padding: 3rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .detail {
+    flex-direction: column;
+  }
+}
+
 .description {
   background-color: #fff;
   box-shadow: var(--shadow-light);
   padding: 3rem;
   flex: 0 0 60%;
   margin-right: 4.5rem;
+}
+
+@media (max-width: 75em) {
+  .description {
+    padding: 2rem;
+    margin-right: 3rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .description {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
 }
 
 .user-reviews {
